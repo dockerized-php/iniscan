@@ -1,5 +1,7 @@
 # Docker image for [iniscan](https://github.com/psecio/iniscan)
 
+[![Build Status](https://travis-ci.org/dockerized-php/iniscan.svg?branch=master)](https://travis-ci.org/dockerized-php/iniscan)
+
 The image are based on [Alpine Linux](https://alpinelinux.org/) and built daily.
 It also uses [tini](https://github.com/krallin/tini) as [init](https://en.wikipedia.org/wiki/Init).
 
