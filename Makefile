@@ -16,12 +16,12 @@ build-latest:
 
 test-3.5:
 	@echo "Test 3.5"
-	@docker run --rm -v $(PWD)/tests:/app dockerizedphp/iniscan:3.5 scan --path=php.ini 2>/dev/null; true
+	@docker run --rm -v $(PWD)/tests:/tmp dockerizedphp/iniscan:3.5 scan --path=php.ini 2>/dev/null; true
 
 test-3.6:
 	@echo "Test 3.6"
-	@docker run --rm -v $(PWD)/tests:/app dockerizedphp/iniscan:3.6 scan --path=php.ini 2>/dev/null; true
+	@docker run --rm -v $(PWD)/tests:/tmp dockerizedphp/iniscan:3.6 scan --path=php.ini 2>/dev/null; true
 
 test-latest:
 	@echo "Test latest"
-	@docker run --rm -v $(PWD)/tests:/app dockerizedphp/iniscan:latest scan --path=php.ini 2>/dev/null; true
+	@docker run --rm -v $(PWD)/tests:/tmp dockerizedphp/iniscan:latest scan --path=php.ini 2>/dev/null; true
