@@ -27,21 +27,6 @@ docker pull dockerizedphp/iniscan:3.6
 
 ### Usage
 
-I'm recommend to use the images as an shell alias to access via short-command.
-To use simply *iniscan* everywhere on CLI add this line to your ~/.zshrc, ~/.bashrc or ~/.profile.
-
 ```
-alias iniscan='docker run -v $PWD:/app --rm dockerizedphp/iniscan'
-```
-
-If you don't have set the alias, use this command to run the container: 
-
-```
-docker run --rm -v /path/to/app:/app dockerizedphp/iniscan [some arguments for iniscan]
-```
-
-For example:
-
-```
-docker run --rm -v /path/to/app:/app dockerizedphp/iniscan run 
+docker run --rm -v /path/to/php.ini:/tmp dockerizedphp/iniscan scan 
 ```
