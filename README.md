@@ -28,5 +28,5 @@ docker pull dockerizedphp/iniscan:3.6
 ### Usage
 
 ```
-docker run --rm -v /path/to/php.ini:/tmp dockerizedphp/iniscan scan 
+docker run --rm -ti -v /path/to/php.ini:/tmp dockerizedphp/iniscan scan --path=php.ini
 ```
