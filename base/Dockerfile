@@ -19,7 +19,7 @@ RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer \
 
 ENV PATH /composer/vendor/bin:$PATH
 
-VOLUME ["/app"]
-WORKDIR /app
+VOLUME ["/tmp"]
+WORKDIR /tmp
 
 ENTRYPOINT ["/sbin/tini", "--", "iniscan"]
